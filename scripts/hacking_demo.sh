@@ -28,7 +28,7 @@ function setUpHackingDemo {
     sudo mysql -u vagrant -pvagrant cyberdemo -e "CREATE TABLE logindata(id int auto_increment, time timestamp default current_timestamp, email varchar(255) not null, password varchar(255), primary key(id));"
 
     sudo rm /var/www/html/index.php
-    sudo cp -a /hacking-demo-macos/configs/hacking-demo/. /var/www/html/
+    sudo cp -a /home/vagrant/hacking-demo-macos/configs/hacking-demo/. /var/www/html/
 }
 
 echo "######################"
