@@ -2,7 +2,7 @@
 set -e
 
 echo "=== Make scripts executable ==="
-sudo chmod +x /hacking-demo-macos/scripts/ 
+sudo chmod +x /hacking-demo/scripts/ 
 
 echo "=== Run script 1: lamp.sh ==="
 sudo bash .hacking-demo/scripts/lamp.sh
