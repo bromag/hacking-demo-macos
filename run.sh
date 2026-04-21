@@ -11,7 +11,7 @@ if [ "$EUID" -ne 0 ]; then
 fi
 
 echo "=== Make scripts executable ==="
-sudo chmod +x ./scripts/ 
+sudo chmod +x ./scripts/
 
 echo "=== Run script 1: lamp.sh ==="
 sudo bash ./scripts/lamp.sh

@@ -29,7 +29,7 @@ end
 
 sudo apt update && sudo apt upgrade -y
 
-sudo apt-get install task-gnome-desktop $
+sudo apt-get install task-gnome-desktop
 
 sudo reboot
 
