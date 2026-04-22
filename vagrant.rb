@@ -1,9 +1,3 @@
-#!/bin/bash
-
-with gui:
-
-vagrant init bento/debian-12 
-
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
@@ -23,28 +17,9 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell", inline: <<-SHELL
     export DEBIAN_FRONTEND=noninteractive
     apt-get update
-    apt-get install -y xfce4 lightdm
+    apt-get upgrade -y
+    apt-get install -y task-xfce-desktop lightdm
+    systemctl enable lightdm
+    reboot
   SHELL
 end
-
-sudo apt update && sudo apt upgrade -y
-
-sudo apt-get install task-gnome-desktop
-
-sudo reboot
-
-
-without gui:
-
-vagrant init bento/debian-12 
-
-sudo apt update && sudo apt upgrade -y
-
-sudo apt install git
-
-git clone https://github.com/vispean/hacking-demo.git
-
-sudo vi run.sh: copy the content of run.sh from above
-
-sudo chmod +x run.sh
-sudo chmod +x /hacking-demo/scripts/
