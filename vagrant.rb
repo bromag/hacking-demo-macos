@@ -6,7 +6,7 @@
 # backwards compatibility). Please don't change it unless you know what
 # you're doing.
 Vagrant.configure("2") do |config|
-  config.vm.box = "bento/debian-12"
+  config.vm.box = "bento/debian-13"
 
   config.vm.provider "parallels" do |prl|
     prl.name = "debian-gui"
