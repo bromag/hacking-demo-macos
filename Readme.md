@@ -1,4 +1,10 @@
-#!/bin/bash
+Initial Setup
+
+Install Brew 
+
+brew install vagrant 
+
+vagrant plugin install vagrant-parallels
 
 with gui:
 
